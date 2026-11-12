@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สั่งซื้อสินค้า – Body Scent</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header solid">
+    <div class="container">
+      <a href="index.html" class="logo">Body Scent</a>
+      <nav class="nav">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html">สินค้าทั้งหมด</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <div class="container">
+        <span class="eyebrow">Order</span>
+        <h1>สั่งซื้อสินค้า</h1>
+        <div class="divider"></div>
+      </div>
+    </section>
+
+    <div class="form-wrap">
+      <form id="orderForm">
+        <div class="form-group">
+          <label for="customerName">ชื่อลูกค้า</label>
+          <input type="text" id="customerName" name="customerName" autocomplete="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="contact">เบอร์โทร / Line</label>
+          <input type="text" id="contact" name="contact" autocomplete="tel" required>
+        </div>
+
+        <div class="form-group">
+          <label for="items">รายการสินค้า</label>
+          <textarea id="items" name="items" rows="2" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="total">จำนวนเงินรวม (บาท)</label>
+          <input type="number" id="total" name="total" min="0" inputmode="numeric" required>
+        </div>
+
+        <div class="form-group">
+          <label for="note">หมายเหตุ</label>
+          <textarea id="note" name="note" rows="3"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-block">ยืนยันสั่งซื้อ</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span class="logo">Body Scent</span>
+      <span>&copy; Body Scent. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
